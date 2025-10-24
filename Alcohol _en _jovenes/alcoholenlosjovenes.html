@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang ="es">
+
+  <!--Inicio de mi documento y el head. En el head va el título de la páguina, es decir como aparezco 
+    en GOOGLE y adémas los metadatos que hace funcional mi página web.-->   
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Trabajo en equipo">
+<meta name="keywords" content="HTML, CSS, JavaScript, SQl Sever, Phyton, Robótica,Consultoria, Servicios">
+<meta name="author" content="Diseño en equipo">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+
+<!-- Inicia el cuerpo del documento -->
+<body class="w3-light-grey">
+<!-- Sidebar (oculta por defecto) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" 
+     style="display:none;z-index:2;width:40%;min-width:300px" 
+     id="mySidebar">
+  
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">✖ Cerrar menú</a>
+  <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">Inicio</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Nosotros</a>
+  <a href="#blog" onclick="w3_close()" class="w3-bar-item w3-button">Blog</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contacto</a>
+</nav>
+<!-- Navigation bar with social media icons -->
+<div class="w3-bar w3-black w3-hide-small">
+  <button class="w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"></i></button>
+  <a href="https://www.facebook.com/profile.php?id=61580920971244&locale=es_LA" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://www.instagram.com/sebaxel05/" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="https://mx.linkedin.com/in/mar%C3%ADa-paula-urquijo-wenzel-245449315" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  <a href="https://github.com/mavazquezcruz-cocoga/DesarrollowebMARIELA" class="w3-bar-item w3-button"><i class="fa fa-github"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+
+<!-- Me falta poner algo en el buscador -->
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>Alcohol en jóvenes ¿Riesgo o diversión?</b></h1>
+    <h6>La diversión real no depende del alcohol, <span class="w3-tag">depende de tus decisiones.</span></h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="img/LOGO.jpg" alt="logo" width="1450" height="950">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-white">El cambio empieza por ti</h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>Únete a una comunidad que elige vivir consciente</b></h1>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Publicación 1 -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>“Lo que no se dice sobre el alcohol”</h3>
+          <h5>Publicado <span class="w3-opacity">Enero 02, 2025</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/EMOCIONES.jpg" alt="Emociones" style="width:95%" class="w3-padding-16">
+          <p> El alcohol es la droga más consumida entre adolescentes y jóvenes. Según la Organización Mundial de la Salud (OMS), más del 40% de los jóvenes de entre 15 y 19 años han probado bebidas alcohólicas.
+Aunque parece una forma de “diversión social”, el consumo temprano puede afectar el desarrollo del cerebro, provocar accidentes, decisiones impulsivas y dependencia a largo plazo.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+             <!-- 1 comentario -->
+              <div class="w3-col l2 m3">
+                <img src="img/Mariana.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Mariana,19 años <span class="w3-opacity w3-medium">Febrero 10, 2025, 6:32 PM</span></h4>
+                <p>“Yo empecé a beber porque todos lo hacían en las fiestas. Pensé que me ayudaría a sentirme parte del grupo, pero terminé sintiéndome peor conmigo misma. Cuando dejé de hacerlo, me di cuenta de que la verdadera diversión estaba en recordar lo que viví, no en olvidar lo que hice.”</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Publicación 2 -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Cuidado emocional</h3>
+          <h5>Recurso recomendado<span class="w3-opacity">Febrero 23, 2025</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/BIENESTAR.jpg" alt="Bienestar" style="width:100%" class="w3-padding-16">
+          <p><strong>Tu bienestar mental también importa.</strong> El cuidado emocional es fundamental porque  afecta cómo pensamos, sentimos y actuamos. En la adolescencia y juventud, las emociones son más intensas y pueden influir en la toma de decisiones, la vida social y la salud física.
+El alcohol a veces se usa como una herramienta para “olvidar problemas” o calmar la ansiedad, pero no resuelve los conflictos internos y puede generar dependencia y riesgos para la salud.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">2</span></button></p>
+          <p class="w3-clear"></p>
+           
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="img/lucas.jpg" style="width:90px;">
+              </div>
+                <!-- 2 comentario -->
+              <div class="w3-col l10 m9">
+                <h4>Lucas <span class="w3-opacity w3-medium">Febrero 26, 2025, 10:52 PM</span></h4>
+                <p>"Siempre pensé que hablar de mis emociones era un tabú, como si fuera una debilidad. Mis amigos me decían qué los problemas se solucionan solos y yo me sentía solo con mis sentimientos. Gracias a este espacio, entendí que pedir ayuda no me hace débil, sino valiente. Hoy puedo hablar de lo que siento sin miedo al juicio."</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/amber.jpg" style="width:90px;">
+              </div>
+               <!-- 3 comentario -->
+              <div class="w3-col l10 m9">
+                <h4>Amber <span class="w3-opacity w3-medium">Febrero 28, 2014, 9:12 PM</span></h4>
+                <p>“Comencé a reconocer mis emociones y escribir en un diario todo lo que sentía. Practico deporte y dibujo para liberar estrés, y uso técnicas de respiración cuando me siento ansioso. Dejé de usar el alcohol como escape y ahora busco apoyo cuando lo necesito. Me siento más tranquilo y con control sobre mi vida.”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Diversión consciente</h3>
+          <h5>Promoviendo experiencias seguras y responsables para jóvenes<span class="w3-opacity">Marzo 07, 2025</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/conciencia.jpg" alt="Conciencia" style="width:100%" class="w3-padding-16">
+          <p><strong>Cada actividad saludable es una oportunidad para crecer y compartir con otros</strong></p>
+          <p>La diversión consciente consiste en encontrar formas de entretenimiento que sean seguras, responsables y que fortalezcan tu bienestar físico, emocional y social.
+
+En esta sección, descubrirás alternativas de diversión que te permiten socializar, aprender y divertirte sin poner en riesgo tu salud. Desde deportes, talleres creativos, actividades culturales, hasta eventos comunitarios, hay muchas formas de pasar un buen rato y crear recuerdos positivos.
+
+Además, aprenderás a manejar la presión de grupo, a comunicar tus decisiones con confianza y a organizar tus propios planes de manera segura. Esta sección busca no solo ofrecer ideas de entretenimiento, sino también desarrollar habilidades sociales, conciencia sobre la salud y hábitos de diversión responsable.
+
+Participa en retos, dinámicas y actividades interactivas que te motivan a experimentar nuevas formas de diversión, compartir tus logros y conectarte con otros jóvenes que buscan vivir experiencias positivas sin recurrir al alcohol.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/pablo.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Pablo <span class="w3-opacity w3-medium">Marzo 10, 2025, 7:22 PM</span></h4>
+                <p>“Participé en un reto de 7 días sin alcohol y descubrí nuevas formas de pasarla bien: juegos, cine con amigos y talleres de arte. Ahora disfruto cada momento de manera consciente y me siento más seguro de mis decisiones.”</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/Miguel.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Miguel<span class="w3-opacity w3-medium">Marzo 14, 2025, 10:32 PM</span></h4>
+                <p>“Aprendí que puedo divertirme y socializar sin beber. Organizo reuniones con mis amigos con juegos, música y deporte, y todos lo pasamos increíble. Mi salud y mis recuerdos están intactos, y eso no tiene precio.”</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/carlos.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Carlos <span class="w3-opacity w3-medium">Marzo 28, 2025, 9:12 PM</span></h4>
+                <p>“Antes creía que no podía divertirme sin alcohol, pero descubrí actividades como voluntariado, música y deportes con mis amigos. Ahora disfruto cada momento, me siento más feliz y mis decisiones son más conscientes.”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="img/ABOUT US.jpg" alt="About us" style="width:100%" class="w3-grayscale">
+        <div class="w3-container w3-black">
+          <h4>Helping Us</h4>
+          <p>Es una comunidad creada por y para jóvenes. Buscamos compartir información, experiencias y apoyo para reflexionar sobre el consumo de alcohol y aprender a disfrutar sin poner en riesgo nuestra salud ni nuestro futuro.
+Aquí encontrarás datos, historias y consejos para tomar decisiones más conscientes.</p>
+        </div>
+      </div>
+      <hr>
+      <!-- Posts -->
+<div class="w3-white w3-margin">
+  <div class="w3-container w3-padding w3-black">
+    <h4>Popular Posts</h4>
+  </div>
+  <ul class="w3-ul w3-hoverable w3-white">
+    <li class="w3-padding-16">
+      <div class="w3-left w3-margin-right w3-circle w3-black" style="width:50px; height:50px; display:flex; align-items:center; justify-content:center; color:white; font-weight:bold;">1</div>
+      <span class="w3-large">“5 alternativas para divertirte sin alcohol”</span>
+      <br>
+      <span>Descubre actividades que realmente te harán pasarla bien.</span>
+    </li>
+    <li class="w3-padding-16">
+      <div class="w3-left w3-margin-right w3-circle w3-black" style="width:50px; height:50px; display:flex; align-items:center; justify-content:center; color:white; font-weight:bold;">2</div>
+      <span class="w3-large">“Cómo decir NO al alcohol y sentirte seguro”</span>
+      <br>
+      <span>Estrategias para manejar la presión social sin perder la diversión.</span>
+    </li>
+    <li class="w3-padding-16">
+      <div class="w3-left w3-margin-right w3-circle w3-black" style="width:50px; height:50px; display:flex; align-items:center; justify-content:center; color:white; font-weight:bold;">3</div>
+      <span class="w3-large">“Historias reales: jóvenes que eligieron diversión consciente”</span>
+      <br>
+      <span>Inspírate con experiencias auténticas de tu edad.</span>
+    </li>
+    <li class="w3-padding-16">
+      <div class="w3-left w3-margin-right w3-circle w3-black" style="width:50px; height:50px; display:flex; align-items:center; justify-content:center; color:white; font-weight:bold;">4</div>
+      <span class="w3-large">“Cuidado emocional: cómo manejar estrés y ansiedad sin alcohol”</span>
+      <br>
+      <span>Herramientas prácticas para tu bienestar mental.</span>
+    </li>
+  </ul>
+</div>
+<hr>
+
+<!-- Advertising -->
+<div class="w3-white w3-margin">
+  <div class="w3-container w3-padding w3-black">
+    <h4>Advertise</h4>
+  </div>
+  <div class="w3-container w3-white">
+    <!-- Video de YouTube como publicidad -->
+    <div class="w3-container w3-section" style="text-align:center;">
+      <iframe width="100%" height="200" 
+        src="https://www.youtube.com/embed/SGCHfhTGbDw" 
+        title="YouTube video ad" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+<hr>
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Tags</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">Alcohol jóvenes</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Presión social alcohol</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Consejos para jóvenes</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Diversión sin alcohol</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Alternativas de diversión</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Retos saludables</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Prevención de alcohol</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hábitos saludables</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Vida consciente</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Cuidado emocional</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Bienestar adolescente</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Vida sin alcohol</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Salud mental juvenil</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Experiencias sin alcohol</span>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Inspiration -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Mentors </h4>
+        </div>
+        <div class="w3-row-padding w3-white">
+          <div class="w3-col s6">
+            <p><img src="img/NATS.jpg" alt="Jeans" style="width:100%"></p>
+            <p><img src="img/MIA.jpg" alt="Jeans" style="width:100%"></p>
+          </div>
+          <div class="w3-col s6">
+            <p><img src="img/MARIELA.jpg" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
+            <p><img src="img/PAU.jpg" alt="Jeans" style="width:100%"></p>
+         </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Follow Us</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+    <footer class="w3-container w3-dark-grey" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+   <h3>© 2015 HELPING US</h3>
+      <p>Email: Contacto@HELPINGUS.com</p>
+  <p>Derechos reservados  <a href="#" target="_blank">Alcohol en jóvenes</a></p>
+</footer>
+
+<script src="js/alcoholenlosjovenes.js"></script>
+
+</body>
+</html>
